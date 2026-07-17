@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>
+RZ Downloader • All In One Downloader
+</title>
+
+
+<meta name="description" content="
+Download TikTok, Instagram, Facebook, Pinterest dengan cepat.
+">
+
+
+<!-- FONT -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+
+
+<!-- TABLER ICON -->
+
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+
+
+
+<!-- LENIS -->
+
+<style>
+
+html{
+scroll-behavior:auto;
+}
+
+</style>
+
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<header class="navbar">
+
+
+<div class="logo">
+
+RZ
+
+<span>
+DOWNLOADER
+</span>
+
+</div>
+
+
+
+<button 
+class="menu-btn"
+id="menuBtn">
+
+☰
+
+</button>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- OVERLAY -->
+
+<div 
+class="overlay"
+id="overlay">
+</div>
+
+
+
+
+
+
+
+<!-- SIDEBAR -->
+
+<aside 
+class="sidebar"
+id="sidebar">
+
+
+
+<div class="side-head">
+
+<h2>
+MENU
+</h2>
+
+
+<button 
+id="closeMenu">
+
+×
+
+
+</button>
+
+
+</div>
+
+
+
+
+
+<a href="index.html">
+
+<i class="ti ti-home"></i>
+
+Dashboard
+
+</a>
+
+
+
+
+
+<a href="fitur.html">
+
+<i class="ti ti-sparkles"></i>
+
+Fitur
+
+</a>
+
+
+
+
+
+<a href="panduan.html">
+
+<i class="ti ti-book"></i>
+
+Panduan
+
+</a>
+
+
+
+
+
+<a href="donasi.html">
+
+<i class="ti ti-heart"></i>
+
+Donasi
+
+</a>
+
+
+
+
+
+<a href="terms.html">
+
+<i class="ti ti-gavel"></i>
+
+Syarat & Ketentuan
+
+</a>
+
+
+
+
+
+
+
+<div class="side-bottom">
+
+
+<h3>
+CONTACT
+</h3>
+
+
+
+
+<a href="#">
+
+<i class="ti ti-brand-whatsapp"></i>
+
+WhatsApp
+
+</a>
+
+
+
+
+
+<a href="#">
+
+<i class="ti ti-brand-telegram"></i>
+
+Telegram
+
+</a>
+
+
+
+
+
+<a href="#">
+
+<i class="ti ti-broadcast"></i>
+
+Saluran
+
+</a>
+
+
+
+
+
+<a href="#">
+
+<i class="ti ti-world"></i>
+
+Website
+
+<br>
+
+<small>
+Coming Soon
+</small>
+
+</a>
+
+
+
+
+</div>
+
+
+
+</aside>
+<main>
+
+
+
+<section class="hero">
+
+
+
+<div class="hero-badge">
+
+⚡ RZ DOWNLOADER
+
+</div>
+
+
+
+
+<h1>
+
+Download
+
+<span>
+
+Apa Saja
+
+</span>
+
+Dengan Cepat.
+
+</h1>
+
+
+
+
+<p>
+
+Downloader modern untuk
+
+<br>
+
+TikTok • Instagram • Facebook • Pinterest
+
+</p>
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<section class="download-card">
+
+
+
+<div class="card-title">
+
+<i class="ti ti-link"></i>
+
+<h2>
+
+Masukkan Link
+
+</h2>
+
+</div>
+
+
+
+
+
+<div class="input-box">
+
+
+
+<input
+
+id="urlInput"
+
+type="url"
+
+placeholder="Tempel link video disini..."
+
+>
+
+
+
+
+
+<button
+
+id="downloadBtn">
+
+DOWNLOAD
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+<p id="statusText"></p>
+
+1l
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="platform-section">
+
+
+
+<h2>
+
+SUPPORTED PLATFORM
+
+</h2>
+
+
+
+
+
+
+<div class="platform-grid">
+
+
+
+
+
+<div class="platform-card">
+
+
+<i class="ti ti-brand-tiktok"></i>
+
+
+<h3>
+
+TikTok
+
+</h3>
+
+
+<p>
+
+No Watermark
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="platform-card">
+
+
+<i class="ti ti-brand-facebook"></i>
+
+
+<h3>
+
+Facebook
+
+</h3>
+
+
+<p>
+
+Video Downloader
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="platform-card">
+
+
+<i class="ti ti-brand-instagram"></i>
+
+
+<h3>
+
+Instagram
+
+</h3>
+
+
+<p>
+
+Reels & Post
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="platform-card">
+
+
+<i class="ti ti-brand-pinterest"></i>
+
+
+<h3>
+
+Pinterest
+
+</h3>
+
+
+<p>
+
+Image & Video
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="feature-preview">
+
+
+
+<h2>
+
+WHY RZ DOWNLOADER?
+
+</h2>
+
+
+
+
+
+<div class="feature-grid">
+
+
+
+
+
+<div class="feature-item">
+
+
+<i class="ti ti-bolt"></i>
+
+
+<h3>
+
+FAST
+
+</h3>
+
+
+<p>
+
+Proses cepat dengan API.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="feature-item">
+
+
+<i class="ti ti-device-mobile"></i>
+
+
+<h3>
+
+RESPONSIVE
+
+</h3>
+
+
+<p>
+
+Nyaman di HP dan PC.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="feature-item">
+
+
+<i class="ti ti-shield-check"></i>
+
+
+<h3>
+
+SECURE
+
+</h3>
+
+
+<p>
+
+Tanpa login.
+
+</p>
+
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="faq-section">
+
+
+
+<h2>
+
+FAQ
+
+</h2>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<button>
+
+
+Apakah gratis?
+
+
+<i class="ti ti-chevron-down"></i>
+
+
+</button>
+
+
+
+
+<p>
+
+Ya, RZ Downloader gratis digunakan.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<button>
+
+
+Support platform apa?
+
+
+<i class="ti ti-chevron-down"></i>
+
+
+</button>
+
+
+
+
+<p>
+
+TikTok, Instagram, Facebook, Pinterest.
+
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="faq-box">
+
+
+<button>
+
+
+Apakah data disimpan?
+
+
+<i class="ti ti-chevron-down"></i>
+
+
+</button>
+
+
+
+
+<p>
+
+Tidak, URL hanya diproses sementara.
+
+</p>
+
+
+</div>
+
+
+
+
+</section>
+
+
+</main>
+<!-- VIDEO POPUP -->
+
+<div 
+class="video-modal" 
+id="videoModal">
+
+
+<div class="video-box">
+
+
+<div class="video-drag"></div>
+
+
+
+
+
+<video
+id="videoPlayer"
+controls
+playsinline>
+</video>
+
+
+
+
+
+<h3 id="videoTitle" class="video-title">
+    Judul Video
+</h3>
+
+<button id="showTitleBtn" class="show-title-btn">
+    Show More
+    <i class="ti ti-chevron-down"></i>
+</button>
+
+
+
+
+
+<p id="videoAuthor">
+
+Author
+
+</p>
+
+
+
+
+
+<span id="videoPlatform">
+
+Platform
+
+</span>
+
+
+
+
+
+
+
+<div class="video-actions">
+
+
+
+<a 
+id="videoDownload"
+download>
+
+
+<i class="ti ti-download"></i>
+
+Video
+
+
+</a>
+
+
+
+
+
+<a 
+id="audioDownload"
+download>
+
+
+<i class="ti ti-music"></i>
+
+Audio
+
+
+</a>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- CONTACT FLOAT -->
+
+<div 
+class="contact-float"
+id="contactBtn">
+
+
+<i class="ti ti-message-circle"></i>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer>
+
+
+<div class="footer-box">
+
+
+<h2>
+
+RZ Downloader
+
+</h2>
+
+
+
+<p>
+
+All In One Downloader
+
+</p>
+
+
+
+
+<div class="footer-links">
+
+
+<a href="panduan.html">
+
+Panduan
+
+</a>
+
+
+<a href="fitur.html">
+
+Fitur
+
+</a>
+
+
+<a href="donasi.html">
+
+Donasi
+
+</a>
+
+
+<a href="terms.html">
+
+Terms
+
+</a>
+
+
+
+</div>
+
+
+
+
+
+<p>
+
+© 2026 RZ Downloader
+
+</p>
+
+
+
+</div>
+
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+<!-- LIBRARY -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+
+
+
+<!-- LENIS SMOOTH SCROLL -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+
+
+<script>
+
+
+const lenis = new Lenis({
+
+duration:1.2,
+
+smoothWheel:true,
+
+smoothTouch:true
+
+});
+
+
+
+function raf(time){
+
+lenis.raf(time);
+
+requestAnimationFrame(raf);
+
+}
+
+
+requestAnimationFrame(raf);
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<!-- APP JS -->
+
+
+<script src="js/api.js"></script>
+
+
+<script src="js/popup.js"></script>
+
+
+<script src="js/app.js"></script>
+
+
+
+
+
+</body>
+
+</html>
