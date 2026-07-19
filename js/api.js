@@ -5,7 +5,7 @@
 // ===============================
 
 
-const API_KEY = "kyzz42272225040205";
+const API_KEY = "kyzz649058754";
 
 const API_HOST = "https://api.kyzzz.eu.cc";
 
