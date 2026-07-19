@@ -6,7 +6,7 @@
 // ===========================================
 // 1. CONFIGURATION
 // ===========================================
-const API_KEY = "kyzz08599405"; 
+const API_KEY = "kyzz649058754"; 
 const BASE_API = "https://api.kyzzz.eu.cc/api/download";
 
 const API = {
