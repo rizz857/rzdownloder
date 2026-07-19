@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<title>Donasi • RZ Downloader</title>
+
+<meta
+name="description"
+content="Dukung pengembangan RZ Downloader agar tetap aktif dan terus berkembang.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/donasi.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+OVERLAY
+=========================== -->
+
+<div
+class="overlay"
+id="overlay">
+
+</div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+RZ
+
+</div>
+
+<div class="logo-text">
+
+<h2>RZ Downloader</h2>
+
+<span>Support Development</span>
+
+</div>
+
+</div>
+
+<button
+class="menu-btn"
+id="menuBtn">
+
+<i class="ti ti-menu-2"></i>
+
+</button>
+
+</header>
+
+<!-- ===========================
+SIDEBAR
+=========================== -->
+
+<aside
+class="sidebar"
+id="sidebar">
+
+<div class="sidebar-head">
+
+<h2>MENU</h2>
+
+<button id="closeMenu">
+
+<i class="ti ti-x"></i>
+
+</button>
+
+</div>
+
+<a href="index.html">
+<i class="ti ti-home"></i>
+Dashboard
+</a>
+
+<a href="fitur.html">
+<i class="ti ti-stars"></i>
+Fitur
+</a>
+
+<a href="panduan.html">
+<i class="ti ti-book"></i>
+Panduan
+</a>
+
+<a href="donasi.html" class="active">
+<i class="ti ti-heart"></i>
+Donasi
+</a>
+
+<a href="terms.html">
+<i class="ti ti-file-text"></i>
+Syarat & Ketentuan
+</a>
+
+</aside>
+
+<!-- ===========================
+MAIN
+=========================== -->
+
+<main>
+
+<!-- ===========================
+HERO
+=========================== -->
+
+<section class="hero">
+
+<div class="hero-badge">
+
+<i class="ti ti-heart-handshake"></i>
+
+Support RZ Downloader
+
+</div>
+
+<h1>
+
+Bantu Kami
+<span>Tetap Berkembang.</span>
+
+</h1>
+
+<p>
+
+Setiap donasi yang kamu berikan akan digunakan untuk
+menjaga server tetap online, meningkatkan performa API,
+serta menghadirkan fitur-fitur baru di RZ Downloader.
+
+</p>
+
+</section>
+<!-- ===========================
+DONATION CARD
+=========================== -->
+
+<section class="donation-section">
+
+<div class="donation-card">
+
+<div class="donation-head">
+
+<div>
+
+<span class="donation-badge">
+
+<i class="ti ti-heart"></i>
+
+Support Developer
+
+</span>
+
+<h2>
+
+Donasi Sekarang
+
+</h2>
+
+<p>
+
+Scan QRIS atau kirim melalui DANA untuk mendukung pengembangan RZ Downloader.
+
+</p>
+
+</div>
+
+<div class="donation-icon">
+
+<i class="ti ti-heart-handshake"></i>
+
+</div>
+
+</div>
+
+<div class="donation-content">
+
+<!-- QRIS -->
+
+<div class="donation-qris">
+
+<div class="qris-box">
+
+<img
+src="assets/qris.png"
+alt="QRIS">
+
+</div>
+
+<button
+id="downloadQR"
+class="donation-btn secondary">
+
+<i class="ti ti-download"></i>
+
+Download QRIS
+
+</button>
+
+</div>
+
+<!-- PAYMENT -->
+
+<div class="payment-list">
+
+<div class="payment-card">
+
+<div class="payment-info">
+
+<div class="payment-logo dana">
+
+D
+
+</div>
+
+<div>
+
+<h3>DANA</h3>
+
+<p id="danaNumber">
+
+088238034057
+
+</p>
+
+</div>
+
+</div>
+
+<button
+id="copyDana"
+class="copy-btn">
+
+<i class="ti ti-copy"></i>
+
+Salin
+
+</button>
+
+</div>
+
+<div class="payment-card">
+
+<div class="payment-info">
+
+<div class="payment-logo">
+
+QR
+
+</div>
+
+<div>
+
+<h3>QRIS</h3>
+
+<p>
+
+Mendukung Semua E-Wallet & Mobile Banking
+
+</p>
+
+</div>
+
+</div>
+
+<span class="payment-status">
+
+<i class="ti ti-circle-check-filled"></i>
+
+Aktif
+
+</span>
+
+</div>
+
+<div class="donation-note">
+
+<i class="ti ti-info-circle"></i>
+
+<span>
+
+Setelah melakukan donasi, kamu dapat menghubungi Developer melalui WhatsApp atau Telegram sebagai bentuk konfirmasi (opsional).
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+WHY DONATE
+=========================== -->
+
+<section class="support-section">
+
+<div class="section-head">
+
+<span class="section-badge">
+
+<i class="ti ti-heart-handshake"></i>
+
+Kenapa Berdonasi?
+
+</span>
+
+<h2>
+
+Donasimu Sangat Berarti ❤️
+
+</h2>
+
+<p>
+
+Setiap donasi yang diberikan akan membantu pengembangan
+RZ Downloader agar tetap cepat, stabil, dan terus mendapatkan
+fitur-fitur baru.
+
+</p>
+
+</div>
+
+<div class="support-grid">
+
+<!-- CARD 1 -->
+
+<div class="support-card">
+
+<div class="support-icon yellow">
+
+<i class="ti ti-server"></i>
+
+</div>
+
+<h3>Server</h3>
+
+<p>
+
+Membantu biaya server agar website dan API tetap online
+24 jam tanpa gangguan.
+
+</p>
+
+</div>
+
+<!-- CARD 2 -->
+
+<div class="support-card">
+
+<div class="support-icon blue">
+
+<i class="ti ti-code"></i>
+
+</div>
+
+<h3>Pengembangan</h3>
+
+<p>
+
+Menambahkan platform baru, meningkatkan kecepatan download,
+serta memperbaiki bug.
+
+</p>
+
+</div>
+
+<!-- CARD 3 -->
+
+<div class="support-card">
+
+<div class="support-icon green">
+
+<i class="ti ti-shield-lock"></i>
+
+</div>
+
+<h3>Pemeliharaan</h3>
+
+<p>
+
+Menjaga keamanan website serta memastikan seluruh fitur
+berjalan dengan baik.
+
+</p>
+
+</div>
+
+<!-- CARD 4 -->
+
+<div class="support-card">
+
+<div class="support-icon pink">
+
+<i class="ti ti-rocket"></i>
+
+</div>
+
+<h3>Inovasi</h3>
+
+<p>
+
+Membantu menghadirkan fitur-fitur baru agar pengalaman
+menggunakan RZ Downloader semakin nyaman.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ===========================
+THANK YOU
+=========================== -->
+
+<section class="thanks-section">
+
+<div class="thanks-card">
+
+<div class="thanks-icon">
+
+<i class="ti ti-heart-filled"></i>
+
+</div>
+
+<h2>
+
+Terima Kasih ❤️
+
+</h2>
+
+<p>
+
+Sekecil apa pun donasi yang kamu berikan sangat berarti
+bagi pengembangan <b>RZ Downloader</b>. Dukunganmu membantu
+kami menjaga server tetap aktif, meningkatkan kualitas layanan,
+serta menghadirkan fitur-fitur baru di masa mendatang.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ===========================
+CONTACT
+=========================== -->
+
+<section class="contact-section">
+
+<div class="section-head">
+
+<span class="section-badge">
+
+<i class="ti ti-address-book"></i>
+
+Hubungi Developer
+
+</span>
+
+<h2>
+
+Butuh Bantuan?
+
+</h2>
+
+<p>
+
+Silakan hubungi kami melalui salah satu kontak resmi berikut.
+
+</p>
+
+</div>
+
+<div class="contact-grid">
+
+<!-- WhatsApp -->
+
+<a
+href="https://wa.me/628811147684"
+target="_blank"
+class="contact-card">
+
+<div class="contact-icon whatsapp">
+
+<i class="ti ti-brand-whatsapp"></i>
+
+</div>
+
+<div class="contact-content">
+
+<h3>WhatsApp</h3>
+
+<p>
+
++62 881-1147-684
+
+</p>
+
+</div>
+
+<i class="ti ti-arrow-up-right"></i>
+
+</a>
+
+<!-- Telegram -->
+
+<a
+href="https://t.me/Ryoyun"
+target="_blank"
+class="contact-card">
+
+<div class="contact-icon telegram">
+
+<i class="ti ti-brand-telegram"></i>
+
+</div>
+
+<div class="contact-content">
+
+<h3>Telegram</h3>
+
+<p>
+
+@Ryoyun
+
+</p>
+
+</div>
+
+<i class="ti ti-arrow-up-right"></i>
+
+</a>
+
+<!-- Channel -->
+
+<a
+href="https://whatsapp.com/channel/0029VbBywra3gvWaDIKyMe3N"
+target="_blank"
+class="contact-card">
+
+<div class="contact-icon channel">
+
+<i class="ti ti-broadcast"></i>
+
+</div>
+
+<div class="contact-content">
+
+<h3>WhatsApp Channel</h3>
+
+<p>
+
+RZ Downloader Official
+
+</p>
+
+</div>
+
+<i class="ti ti-arrow-up-right"></i>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+<div class="footer-content">
+
+<div>
+
+<h2>
+
+RZ Downloader
+
+</h2>
+
+<p>
+
+Support Development • Neo Brutalism Edition
+
+</p>
+
+</div>
+
+<div class="footer-links">
+
+<a href="index.html">
+
+Dashboard
+
+</a>
+
+<a href="fitur.html">
+
+Fitur
+
+</a>
+
+<a href="panduan.html">
+
+Panduan
+
+</a>
+
+<a href="terms.html">
+
+Terms
+
+</a>
+
+</div>
+
+</div>
+
+<p class="copyright">
+
+© 2026 RZ Downloader • All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ===========================
+LIBRARY
+=========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+<script src="js/donasi.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>RZ Downloader</title>
+
+<meta
+    name="description"
+    content="Download TikTok, YouTube, Facebook, Instagram, Pinterest, X dan platform lainnya.">
+
+<meta
+    name="theme-color"
+    content="#0f172a">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!-- ===========================
+PRELOADER
+=========================== -->
+
+<div id="preloader">
+
+    <div class="loader-card">
+
+        <video
+            id="introVideo"
+            autoplay
+            muted
+            playsinline
+            preload="auto">
+
+            <source
+                src="assets/logo.mp4"
+                type="video/mp4">
+
+        </video>
+
+        <div class="loader-info">
+
+            <h2>RZ Downloader</h2>
+
+            <p>Preparing Downloader...</p>
+
+            <div class="loader-progress">
+
+                <div
+                    class="loader-bar"
+                    id="loaderBar">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+OVERLAY
+=========================== -->
+
+<div
+    class="overlay"
+    id="overlay">
+
+</div>
+
+<!-- ===========================
+HEADER
+=========================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        <div class="logo-icon">
+
+            RZ
+
+        </div>
+
+        <div class="logo-text">
+
+            <h2>RZ Downloader</h2>
+
+            <span>All In One Downloader</span>
+
+        </div>
+
+    </div>
+
+    <button
+        class="menu-btn"
+        id="menuBtn">
+
+        <i class="ti ti-menu-2"></i>
+
+    </button>
+
+</header>
+
+<!-- ===========================
+SIDEBAR
+=========================== -->
+
+<aside
+    class="sidebar"
+    id="sidebar">
+
+    <div class="sidebar-head">
+
+        <h2>MENU</h2>
+
+        <button id="closeMenu">
+
+            <i class="ti ti-x"></i>
+
+        </button>
+
+    </div>
+
+    <a href="index.html">
+
+        <i class="ti ti-home"></i>
+
+        Dashboard
+
+    </a>
+
+    <a href="fitur.html">
+
+        <i class="ti ti-stars"></i>
+
+        Fitur
+
+    </a>
+
+    <a href="panduan.html">
+
+        <i class="ti ti-book"></i>
+
+        Panduan
+
+    </a>
+
+    <a href="donasi.html">
+
+        <i class="ti ti-heart"></i>
+
+        Donasi
+
+    </a>
+
+    <a href="terms.html">
+
+        <i class="ti ti-file-text"></i>
+
+        Syarat & Ketentuan
+
+    </a>
+
+</aside>
+
+<!-- ===========================
+MAIN
+=========================== -->
+
+<main>
+<!-- ===========================
+HERO
+=========================== -->
+
+<section class="hero">
+
+    <div class="hero-grid">
+
+        <div class="hero-left">
+
+            <div class="hero-badge">
+
+                <i class="ti ti-bolt"></i>
+
+                <span>RZ DOWNLOADER 2026</span>
+
+            </div>
+
+            <h1>
+
+                Download
+                <span>Apa Saja.</span>
+
+            </h1>
+
+            <p>
+
+                Downloader modern dengan tampilan Neo Brutalism.
+                Mendukung TikTok, Facebook, YouTube,
+                Instagram, Pinterest, X dan platform lainnya.
+
+            </p>
+
+            <div class="hero-action">
+
+                <button class="hero-btn">
+
+                    <i class="ti ti-arrow-down"></i>
+
+                    Start Download
+
+                </button>
+
+                <a
+                    href="fitur.html"
+                    class="hero-outline">
+
+                    <i class="ti ti-layout-grid"></i>
+
+                    Features
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-right">
+
+            <div class="hero-preview">
+
+                <div class="preview-header">
+
+                    <div class="preview-dot"></div>
+                    <div class="preview-dot"></div>
+                    <div class="preview-dot"></div>
+
+                </div>
+
+                <div class="preview-body">
+
+                    <div class="preview-platform">
+
+                        <div>
+
+                            <i class="ti ti-brand-tiktok"></i>
+
+                            <span>TikTok</span>
+
+                        </div>
+
+                        <div>
+
+                            <i class="ti ti-brand-youtube"></i>
+
+                            <span>YouTube</span>
+
+                        </div>
+
+                        <div>
+
+                            <i class="ti ti-brand-facebook"></i>
+
+                            <span>Facebook</span>
+
+                        </div>
+
+                        <div>
+
+                            <i class="ti ti-brand-instagram"></i>
+
+                            <span>Instagram</span>
+
+                        </div>
+
+                        <div>
+
+                            <i class="ti ti-brand-pinterest"></i>
+
+                            <span>Pinterest</span>
+
+                        </div>
+
+                        <div>
+
+                            <i class="ti ti-brand-x"></i>
+
+                            <span>X</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+DOWNLOAD
+=========================== -->
+
+<section class="download-section">
+
+    <div class="download-card">
+
+        <div class="download-head">
+
+            <div>
+
+                <h2>Paste Your Link</h2>
+
+                <p>
+
+                    Tempel URL lalu tekan tombol Download.
+
+                </p>
+
+            </div>
+
+            <div class="download-icon">
+
+                <i class="ti ti-download"></i>
+
+            </div>
+
+        </div>
+
+        <div class="download-input">
+
+            <input
+                id="urlInput"
+                type="url"
+                placeholder="https://...">
+
+            <button id="downloadBtn">
+
+                <i class="ti ti-search"></i>
+
+                <span>Download</span>
+
+            </button>
+
+        </div>
+
+        <div
+            id="statusText"
+            class="status-text">
+
+            Ready.
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+SUPPORTED PLATFORM
+=========================== -->
+
+<section class="platform-section">
+
+    <div class="section-head">
+
+        <span class="section-badge">
+
+            <i class="ti ti-apps"></i>
+
+            Supported Platform
+
+        </span>
+
+        <h2>
+
+            Download Dari Platform Favoritmu
+
+        </h2>
+
+        <p>
+
+            Semua platform didukung menggunakan API khusus
+            agar proses download lebih cepat, stabil dan berkualitas.
+
+        </p>
+
+    </div>
+
+    <div class="platform-grid">
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-brand-tiktok"></i>
+
+            </div>
+
+            <h3>TikTok</h3>
+
+            <p>Video • Slide • Audio</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-brand-youtube"></i>
+
+            </div>
+
+            <h3>YouTube</h3>
+
+            <p>Video • Audio</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-brand-facebook"></i>
+
+            </div>
+
+            <h3>Facebook</h3>
+
+            <p>Video HD</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-brand-instagram"></i>
+
+            </div>
+
+            <h3>Instagram</h3>
+
+            <p>Reels • Story • Post</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-brand-pinterest"></i>
+
+            </div>
+
+            <h3>Pinterest</h3>
+
+            <p>Image • Video</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-brand-x"></i>
+
+            </div>
+
+            <h3>X / Twitter</h3>
+
+            <p>Video Downloader</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-at"></i>
+
+            </div>
+
+            <h3>Threads</h3>
+
+            <p>Media Downloader</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-circle-check-filled"></i>
+
+                Supported
+
+            </span>
+
+        </div>
+
+        <div class="platform-card featured">
+
+            <div class="platform-icon">
+
+                <i class="ti ti-photo-video"></i>
+
+            </div>
+
+            <h3>All In One</h3>
+
+            <p>Auto Detect Platform</p>
+
+            <span class="platform-status">
+
+                <i class="ti ti-sparkles"></i>
+
+                Recommended
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+DOWNLOAD POPUP
+=========================== -->
+
+<div
+    class="media-modal"
+    id="mediaModal">
+
+    <div class="media-popup">
+
+        <div class="popup-handle"></div>
+
+        <button
+            class="popup-close"
+            id="closePopup">
+
+            <i class="ti ti-x"></i>
+
+        </button>
+
+        <!-- PREVIEW -->
+
+        <div class="preview-wrapper">
+
+            <video
+                id="popupVideo"
+                controls
+                playsinline>
+
+            </video>
+
+            <div
+                id="popupGallery"
+                class="popup-gallery">
+
+            </div>
+
+        </div>
+
+        <!-- INFO -->
+
+        <div class="popup-info">
+
+            <h2 id="popupTitle">
+
+                Loading...
+
+            </h2>
+
+            <div class="popup-meta">
+
+                <span>
+
+                    <i class="ti ti-user"></i>
+
+                    <b id="popupAuthor">
+
+                        Unknown
+
+                    </b>
+
+                </span>
+
+                <span>
+
+                    <i class="ti ti-world"></i>
+
+                    <b id="popupPlatform">
+
+                        Platform
+
+                    </b>
+
+                </span>
+
+            </div>
+
+        </div>
+
+        <!-- MEDIA SWITCH -->
+
+        <div class="media-switch">
+
+            <button
+                id="videoTab"
+                class="media-tab active">
+
+                <i class="ti ti-video"></i>
+
+                <span>Video</span>
+
+            </button>
+
+            <button
+                id="photoTab"
+                class="media-tab">
+
+                <i class="ti ti-photo"></i>
+
+                <span>Photo</span>
+
+            </button>
+
+            <button
+                id="audioTab"
+                class="media-tab">
+
+                <i class="ti ti-music"></i>
+
+                <span>Audio</span>
+
+            </button>
+
+        </div>
+
+        <!-- VIDEO -->
+
+        <div
+            id="videoPanel"
+            class="media-panel active">
+
+            <button
+                id="downloadVideo"
+                class="download-btn">
+
+                <i class="ti ti-download"></i>
+
+                Download Video
+
+            </button>
+
+        </div>
+
+        <!-- PHOTO -->
+
+        <div
+            id="photoPanel"
+            class="media-panel">
+
+            <div
+                id="photoList"
+                class="photo-list">
+
+            </div>
+
+            <button
+                id="downloadAllPhoto"
+                class="download-btn">
+
+                <i class="ti ti-photo-down"></i>
+
+                Download Semua Foto
+
+            </button>
+
+        </div>
+
+        <!-- AUDIO -->
+
+        <div
+            id="audioPanel"
+            class="media-panel">
+
+            <button
+                id="downloadAudio"
+                class="download-btn">
+
+                <i class="ti ti-music"></i>
+
+                Download Audio
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ===========================
+FEATURES
+=========================== -->
+
+<section class="feature-section">
+
+    <div class="section-head">
+
+        <span class="section-badge">
+
+            <i class="ti ti-stars"></i>
+
+            Features
+
+        </span>
+
+        <h2>
+
+            Kenapa Memilih RZ Downloader?
+
+        </h2>
+
+        <p>
+
+            Downloader modern, cepat, aman dan mendukung berbagai platform.
+
+        </p>
+
+    </div>
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <i class="ti ti-bolt"></i>
+
+            <h3>Fast API</h3>
+
+            <p>
+
+                Menggunakan API berkecepatan tinggi sehingga proses download lebih cepat.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="ti ti-shield-lock"></i>
+
+            <h3>Secure</h3>
+
+            <p>
+
+                Link hanya diproses saat download dan tidak disimpan.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="ti ti-device-mobile"></i>
+
+            <h3>Responsive</h3>
+
+            <p>
+
+                Nyaman digunakan di Android, iPhone maupun Desktop.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="ti ti-photo-video"></i>
+
+            <h3>Multi Media</h3>
+
+            <p>
+
+                Mendukung Video, Audio, Slide dan Gallery Photo.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="ti ti-cloud-download"></i>
+
+            <h3>Unlimited</h3>
+
+            <p>
+
+                Download tanpa batas dan tanpa registrasi akun.
+
+            </p>
+
+        </div>
+
+        <div class="feature-card">
+
+            <i class="ti ti-refresh"></i>
+
+            <h3>Always Updated</h3>
+
+            <p>
+
+                Parser selalu diperbarui mengikuti perubahan platform.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+FAQ
+=========================== -->
+
+<section class="faq-section">
+
+    <div class="section-head">
+
+        <span class="section-badge">
+
+            <i class="ti ti-help"></i>
+
+            FAQ
+
+        </span>
+
+        <h2>
+
+            Pertanyaan Umum
+
+        </h2>
+
+    </div>
+
+    <div class="faq-list">
+
+        <div class="faq-item">
+
+            <button>
+
+                <span>Apakah RZ Downloader gratis?</span>
+
+                <i class="ti ti-chevron-down"></i>
+
+            </button>
+
+            <div>
+
+                Ya. Seluruh fitur utama dapat digunakan secara gratis.
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button>
+
+                <span>Platform apa saja yang didukung?</span>
+
+                <i class="ti ti-chevron-down"></i>
+
+            </button>
+
+            <div>
+
+                TikTok, Facebook, Instagram, YouTube, Pinterest, X/Twitter, Threads dan berbagai platform lainnya.
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button>
+
+                <span>Apakah data saya disimpan?</span>
+
+                <i class="ti ti-chevron-down"></i>
+
+            </button>
+
+            <div>
+
+                Tidak. URL hanya digunakan sementara untuk memproses download.
+
+            </div>
+
+        </div>
+
+        <div class="faq-item">
+
+            <button>
+
+                <span>Apakah ada batas download?</span>
+
+                <i class="ti ti-chevron-down"></i>
+
+            </button>
+
+            <div>
+
+                Tidak ada batas harian selama server tersedia.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+CONTACT FLOAT
+=========================== -->
+
+<div class="contact-float">
+
+    <button id="contactBtn">
+
+        <i class="ti ti-message-circle"></i>
+
+    </button>
+
+    <div class="contact-menu">
+
+        <a
+            href="https://wa.me/628811147684"
+            target="_blank">
+
+            <i class="ti ti-brand-whatsapp"></i>
+
+            WhatsApp
+
+        </a>
+
+        <a
+            href="https://t.me/Ryoyun"
+            target="_blank">
+
+            <i class="ti ti-brand-telegram"></i>
+
+            Telegram
+
+        </a>
+
+        <a
+            href="https://whatsapp.com/channel/0029VbBywra3gvWaDIKyMe3N"
+            target="_blank">
+
+            <i class="ti ti-broadcast"></i>
+
+            Channel
+
+        </a>
+
+    </div>
+
+</div>
+
+<!-- ===========================
+FOOTER
+=========================== -->
+
+<footer>
+
+    <div class="footer-content">
+
+        <div>
+
+            <h2>
+
+                RZ Downloader
+
+            </h2>
+
+            <p>
+
+                All In One Downloader • Neo Brutalism Edition
+
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="index.html">
+
+                Dashboard
+
+            </a>
+
+            <a href="fitur.html">
+
+                Fitur
+
+            </a>
+
+            <a href="panduan.html">
+
+                Panduan
+
+            </a>
+
+            <a href="donasi.html">
+
+                Donasi
+
+            </a>
+
+            <a href="terms.html">
+
+                Terms
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <p class="copyright">
+
+        © 2026 RZ Downloader • All Rights Reserved
+
+    </p>
+
+</footer>
+
+</main>
+
+<!-- ===========================
+LIBRARY
+=========================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/popup.js"></script>
+
+<script src="js/loader.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
