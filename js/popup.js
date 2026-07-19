@@ -202,27 +202,58 @@ function renderAudio() {
 // DOWNLOAD LOGIC
 // ===========================================
 async function downloadMedia(url, filename) {
+
+    if (typeof Swal !== "undefined") {
+        Swal.fire({
+            toast: true,
+            position: "top-end",
+            icon: "info",
+            title: "Memulai download...",
+            showConfirmButton: false,
+            timer: 1500
+        });
+    }
+
     try {
-        if (typeof Swal !== "undefined") {
-            Swal.fire({
-                toast: true, position: "top-end",
-                icon: "info", title: "Memulai download...",
-                showConfirmButton: false, timer: 1500
-            });
-        }
+
         const res = await fetch(url);
+
+        if (!res.ok) throw new Error("Fetch gagal");
+
         const blob = await res.blob();
+
         const blobUrl = URL.createObjectURL(blob);
+
         const a = document.createElement("a");
+
         a.href = blobUrl;
         a.download = filename;
+        a.style.display = "none";
+
         document.body.appendChild(a);
+
         a.click();
-        a.remove();
-        URL.revokeObjectURL(blobUrl);
-    } catch (err) {
-        window.open(url, "_blank");
+
+        document.body.removeChild(a);
+
+        setTimeout(() => {
+            URL.revokeObjectURL(blobUrl);
+        }, 1000);
+
+    } catch (e) {
+
+        if (typeof Swal !== "undefined") {
+            Swal.fire({
+                icon: "error",
+                title: "Download gagal",
+                text: "Browser memblokir file (CORS)."
+            });
+        }
+
+        console.error(e);
+
     }
+
 }
 
 // ===========================================
